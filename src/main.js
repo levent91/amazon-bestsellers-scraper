@@ -127,7 +127,7 @@ Apify.main(async () => {
 
             // Scrape items from enqueued pages
             if (request.userData.detailPage) {
-                await scrapeDetailsPage(request, page, pageData, label);
+                await scrapeDetailsPage(page, pageData, label);
             }
         },
     });
